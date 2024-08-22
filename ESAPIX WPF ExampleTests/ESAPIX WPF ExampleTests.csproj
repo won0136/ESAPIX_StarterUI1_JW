@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net480</TargetFramework>
+    <RootNamespace>ESAPIX_WPF_ExampleTests</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<LangVersion>Latest</LangVersion>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ESAPIX_StarterUI1\ESAPIX WPF Example.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="ESAPIX_16.1" Version="1.6.7845.354" />
+		<PackageReference Include="Prism.Ninject" Version="7.2.0.1422" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="VMS.TPS.Common.Model.API">
+			<HintPath>C:\Program Files (x86)\Varian\RTM\16.1\esapi\API\VMS.TPS.Common.Model.API.dll</HintPath>
+		</Reference>
+		<Reference Include="VMS.TPS.Common.Model.Types">
+			<HintPath>C:\Program Files (x86)\Varian\RTM\16.1\esapi\API\VMS.TPS.Common.Model.Types.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	
+  <ItemGroup>
+    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+  </ItemGroup>
+
+</Project>
